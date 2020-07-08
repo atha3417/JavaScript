@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metode Angka Pada JavaScript</title>
+</head>
+<body>
+    
+    <h1 id="wrap">Metode Angka</h1>
+
+<script>
+    var wrap = document.getElementById("wrap");
+    var angka = 12312.1223
+    var angka2 = 123
+    var string = "400"
+
+    // Metode Angka (boleh digabung gabung metodenya contoh baris 27)
+    // 1. toFixed(n) = menentukan berapa angka dibelakang koma yang kita inginkan dari bilangan yang ada komany
+    // wrap.innerHTML = angka.toFixed(2)
+
+    // 2. toString() = mengubah tipe data angka ke string
+    // wrap.innerHTML = angka2.toString() + string
+
+    // 3. random() = mengacak angka secara otomatis
+    // wrap.innerHTML = Math.random()
+    // wrap.innerHTML = Math.random().toFixed(2)
+
+    // 4. min(a, b, c) = mencari angka terkecil dari beberapa angka yang dimasukkan
+    // wrap.innerHTML = Math.min(157,278,8903,43232,1322,angka,angka2)
+    
+    // 5. max(a, b, c) = mencari angka terbesar dari beberapa angka yang dimasukkan
+    // wrap.innerHTML = Math.max(157,278,8903,43232,1322,angka,angka2)
+    
+    // 6. round() = membulatkan angka ke angka terdekat
+    // wrap.innerHTML = Math.round(angka)
+    
+    // 7. ceil() = membulatkan angka ke terbesar
+    // wrap.innerHTML = Math.ceil(angka)
+    
+    // 8. floor() = membulatkan angka ke terkecil
+    // wrap.innerHTML = Math.floor(angka)
+    
+    // 8. log()
+    // wrap.innerHTML = Math.log(angka)
+    
+    // 9. random spesifik formula Math.round(Math.random() + batasMaksimalAngka) + batasMinimalAngka / range / jaraknya
+    batasMaksimalAngka = 10;
+    range = 1;
+    wrap.innerHTML = Math.round(Math.random() + batasMaksimalAngka) + range
+</script>
+</body>
+</html>

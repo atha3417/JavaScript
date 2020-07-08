@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Metode Array Pada JavaScript</title>
+</head>
+<body>
+
+	<h1 id="wrap">MetodeArray</h1>
+	
+<script>
+	let wrap = document.getElementById('wrap')
+
+	function pemain_bola (nama_pemain, umur) {
+		this.nama = nama_pemain
+		this.umur = umur
+	}
+
+	pemain_bola.prototype.negara = "Argentina"
+
+	let messi = new pemain_bola("Lionel Messi", 30)
+	let suarez = new pemain_bola("Luis Suarez", 32)
+	// wrap.innerHTML = messi.nama
+	// wrap.innerHTML = suarez.negara
+
+	// mutable
+	let programmer = {
+		nama: "Atha",
+		umur: 14,
+		sifat: "Begitulah",
+		getData: function() {
+			return "Nama: " + this.nama + " Umur: " + this.umur
+		},
+		setData: function() {
+			// this.nama = nama
+		}
+	}
+	let designer = programmer
+	designer.nama = "Messi"
+	// wrap.innerHTML = designer.nama
+	wrap.innerHTML = programmer.nama
+</script>
+</body>
+</html>

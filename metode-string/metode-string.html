@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Metode String Pada JavaScript</title>
+</head>
+<body>
+
+	<h1 id="wrapper">MetodeString</h1>
+	
+</body>
+</html>
+<script>
+	var nama = "Muhammad Atha Tsaqif"
+	var angka = "123321"
+	var angka2 = "123321.78"
+	var str = document.getElementById('wrapper')
+	// metode string
+	
+	// 1. length = menghitung panjang sebuah string
+	// str.innerHTML = nama.length
+		
+	// 2. indexOf = mencari huruf / kata tertentu(huruf pertama ditemukan)
+	// str.innerHTML = nama.indexOf('a')
+	
+	// 3. lastIndexOf = mencari huruf / kata tertentu(huruf terakhir)
+	// str.innerHTML = nama.lastIndexOf('m')
+
+	// 4. search = mencari huruf / kata tertentu(lebih spesifik)
+	// str.innerHTML = nama.search('i')
+
+	// 5. charAt = mencari huruf sesuai index hurufnya
+	// str.innerHTML = nama.charAt(6)
+
+	// 6. toUpperCase() = membesarkan / capital semua huruf pada string
+	// str.innerHTML = nama.toUpperCase()
+
+	// 7. toLowerCase() = mengecilka semua huruf pada string
+	// str.innerHTML = nama.toLowerCase()
+
+	// 8. replace() = mengganti kata tertentu menjadi kata yang kita tuliskan sebagai parameter
+	// str.innerHTML = nama.replace("Atha", "Replace")
+
+	// 9. substring(start, end) = mengambil bagian tertentu pada string
+	// str.innerHTML = nama.substring(3, 10)
+
+
+	// 10. substr(start, length) = mengambil bagian tertentu pada string sesuai panjang yang kita tentukan
+	// str.innerHTML = nama.substr(1, 5)
+
+
+	// 11. parseInt = mengubah string menjadi angka
+	// str.innerHTML = parseInt(angka) + 10
+
+
+	// 11. parseFloat = mengubah string menjadi angka dan ada komanya
+	str.innerHTML = parseFloat(angka2)
+</script>

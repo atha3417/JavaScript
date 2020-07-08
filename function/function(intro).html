@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Function</title>
+</head>
+<body>
+
+
+<script>
+	// built in function: string
+	// functionnya :
+	// charAt(), slice(), split(), toString(), toLowerCase(), toUpperCase(),
+	var nama = "Atha Tsaqif";
+	console.log(nama.charAt(5));
+	// built in function: math
+	// functionnya: 
+	// sin(), cos(), tan(), random(), round(), floor(), ceil(), log()
+	var bil = Math.random();
+	console.log(bil);
+
+	// user defined function (dibuat oleh user)
+	// cara membuatnya
+	// dengan deklarasi
+	// dengan ekspresi
+
+	//metode deklarasi
+	function jumlahDuaBilangan(a, b) {
+		var total;
+		total = a + b;
+
+		return total;
+	}
+
+	//metode ekspresi
+	var jumlahDuaBilangan = function (a, b) {
+		var total;
+		total = a + b;
+
+		return total;
+	}
+
+	//menjalankan function
+	alert(jumlahDuaBilangan(1,2));
+	alert(jumlahDuaBilangan(25,30));
+	alert(jumlahDuaBilangan(1500,17.5));
+
+</script>
+</body>
+</html>
