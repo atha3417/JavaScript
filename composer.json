@@ -1,0 +1,13 @@
+{
+    "name": "atha/javascript",
+    "description": "Just JavaScript code",
+    "keywords": ["cpp", "javascript"],
+    "license": "None",
+    "authors": [
+        {
+            "name": "Atha Tsaqif",
+            "email": "atha.3417@gmail.com",
+            "homepage": "http://example.com/"
+        }
+    ]
+}
